@@ -45,21 +45,6 @@ Ejemplos de muletillas detectadas:
 
 Este análisis permite evaluar la fluidez de la comunicación.
 
----
-
-## Resultados de ejemplo
-
-### Resultado de transcripción de audio
-
-![Resultado speech to text](speech_to_text_output.PNG)
-
----
-
-### Resultado de detección de muletillas
-
-![Resultado detección de muletillas](filler_detector_output.PNG)
-
----
 
 ## Objetivo del prototipo
 
