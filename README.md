@@ -1,20 +1,40 @@
-# RimAI# RimAI – Speech Analysis Prototype
+# RimAI – Prototipo de análisis de comunicación
 
-Prototype developed to analyze spoken communication quality.
+RimAI es un prototipo que permite analizar la calidad de la comunicación oral mediante el procesamiento automático de audio.
 
-## Scripts
+El sistema convierte audio en texto y luego identifica patrones como muletillas, que pueden afectar la claridad y fluidez del discurso.
+
+---
+
+## Arquitectura del prototipo
+
+El flujo del sistema es el siguiente:
+
+audio → texto → detección de muletillas
+
+---
+
+## Scripts incluidos
 
 ### 1. speech_to_text.py
-Converts audio (.wav) into text using Vosk speech recognition.
 
-Input:
+Convierte un archivo de audio (.wav) en texto utilizando reconocimiento de voz offline mediante el modelo Vosk.
+
+Entrada:
 audio.wav
 
-Output:
+Salida:
 transcription.txt
 
+Este módulo permite transformar contenido hablado en texto para su posterior análisis.
+
+---
+
 ### 2. filler_detector.py
-Detects filler words in speech such as:
+
+Analiza el texto generado y detecta muletillas frecuentes en el discurso.
+
+Ejemplos de muletillas detectadas:
 
 - este
 - osea
@@ -23,10 +43,53 @@ Detects filler words in speech such as:
 - tipo
 - literalmente
 
-## Pipeline
+Este análisis permite evaluar la fluidez de la comunicación.
 
-audio → text → filler detection
+---
 
-## Objective
+## Resultados de ejemplo
 
-Help evaluate communication clarity and reduce filler words in professional environments.
+### Resultado de transcripción de audio
+
+![Resultado speech to text](speech_to_text_output.png)
+
+---
+
+### Resultado de detección de muletillas
+
+![Resultado detección de muletillas](filler_detector_output.png)
+
+---
+
+## Objetivo del prototipo
+
+El objetivo de RimAI es desarrollar una herramienta que permita evaluar la claridad de la comunicación oral en contextos profesionales, educativos y corporativos.
+
+El sistema puede utilizarse como base para:
+
+- evaluación de habilidades comunicativas
+- entrenamiento en presentaciones
+- mejora de claridad en el discurso
+- análisis de entrevistas
+- retroalimentación automatizada
+
+---
+
+## Próximos pasos
+
+El prototipo puede ampliarse incorporando:
+
+- detección de pausas
+- velocidad de habla
+- análisis de estructura del discurso
+- puntuación automática
+- panel de visualización de resultados
+- integración con reuniones virtuales
+
+---
+
+## Tecnologías utilizadas
+
+- Python
+- Vosk Speech Recognition
+- Procesamiento de lenguaje natural (NLP)
