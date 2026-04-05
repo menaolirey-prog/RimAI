@@ -8,7 +8,7 @@ El sistema convierte audio en texto y luego identifica patrones como muletillas,
 
 ## Arquitectura del prototipo
 
-El flujo del sistema es el siguiente:
+Flujo del sistema:
 
 audio → texto → detección de muletillas
 
@@ -51,13 +51,13 @@ Este análisis permite evaluar la fluidez de la comunicación.
 
 ### Resultado de transcripción de audio
 
-![Resultado speech to text](speech_to_text_output.png)
+![Resultado speech to text](speech_to_text_output.PNG)
 
 ---
 
 ### Resultado de detección de muletillas
 
-![Resultado detección de muletillas](filler_detector_output.png)
+![Resultado detección de muletillas](filler_detector_output.PNG)
 
 ---
 
@@ -72,19 +72,6 @@ El sistema puede utilizarse como base para:
 - mejora de claridad en el discurso
 - análisis de entrevistas
 - retroalimentación automatizada
-
----
-
-## Próximos pasos
-
-El prototipo puede ampliarse incorporando:
-
-- detección de pausas
-- velocidad de habla
-- análisis de estructura del discurso
-- puntuación automática
-- panel de visualización de resultados
-- integración con reuniones virtuales
 
 ---
 
